@@ -10,6 +10,12 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
 
+repositories {
+    maven {
+        url 'http://maven.tterrag.com'
+    }
+}
+
 ext.configFile = file "gradle.properties"
 configFile.withReader {
     def prop = new Properties()
@@ -43,7 +49,8 @@ minecraft {
 }
 
 dependencies {
-
+    compile "com.enderio:EnderIO:${config.enderio_version}"
+    compile "com.enderio.core:EnderCore:${config.endercore_version}"
 }
 
 processResources

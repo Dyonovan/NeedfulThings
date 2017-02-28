@@ -1,0 +1,16 @@
+[
+{
+  "modid": "needfulthings",
+  "name": "Needful Things",
+  "description": "Needed things for Minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Dyonovan"],
+  "credits": "PaulJoda for giving me the idea",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -15,7 +15,7 @@ public class Reference {
     public static final String MOD_NAME     = "NeedfulThings";
     public static final String MOD_ID       = "needfulthings";
     public static final String VERSION      = "@VERSION@";
-    public static final String DEPENDENCIES = "required-after:Forge;";
+    public static final String DEPENDENCIES = "";
     public static final String UPDATE_JSON  = "";
 
 }

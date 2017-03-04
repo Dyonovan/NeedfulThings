@@ -125,11 +125,9 @@ public class EnchantmentBeheading extends Enchantment {
     //Code Taken From EnderIO - https://github.com/SleepyTrousers/EnderIO
     private ItemStack getSkullForEntity(EntityLivingBase entityLiving) {
         if (entityLiving instanceof EntitySkeleton) {
-            if (((EntitySkeleton) entityLiving).getSkeletonType() == SkeletonType.WITHER) {
-                return new ItemStack(Items.SKULL, 1, 1);
-            } else {
-                return new ItemStack(Items.SKULL, 1, 0);
-            }
+            return new ItemStack(Items.SKULL, 1, 0);
+        } else if (entityLiving instanceof  EntityWitherSkeleton) {
+            return new ItemStack(Items.SKULL, 1, 1);
         } else if (entityLiving instanceof EntityZombie) {
             return new ItemStack(Items.SKULL, 1, 2);
         } else if (entityLiving instanceof EntityCreeper) {
